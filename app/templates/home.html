@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+    <title>Choice of action</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Choice of action</h2>
+
+    <a class="register" href="#" onclick="redirectToRegister()">Sign up</a>
+    <a class="login" href="#" onclick="redirectToLogin()">Sign in</a>
+    <script>
+        function redirectToRegister() {
+            window.location.href = '/register';
+        }
+
+        function redirectToLogin() {
+            window.location.href = '/login';
+        }
+    </script>
+</div>
+
+</body>
+</html>

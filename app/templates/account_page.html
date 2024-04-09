@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='account_page_style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+</head>
+<body>
+<h1>User account</h1>
+<div id="content" class="about_user">
+    <div id="userInfo">
+        <p>Username:
+            <button class="changeButton centeredButton" onclick="changeUsername()">Change Name</button>
+        </p>
+        <p>Email:
+            <button class="changeButton centeredButton" onclick="changeEmail()">Change Email</button>
+        </p>
+        <p>Delete:
+            <button class="deleteAccountButton centeredButton" onclick="deleteAccount()">Delete account</button>
+        </p>
+    </div>
+
+    <div id="yourOrders" class="users_orders">
+        <p>Your Orders:</p>
+        <div id="orderList"></div>
+    </div>
+</div>
+<button class="backButton" onclick="goBack()">Back</button>
+<script src="{{ url_for('static', filename='account_page_script.js') }}"></script>
+</body>
+</html>

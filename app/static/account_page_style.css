@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Satisfy&display=swap");
+
+:root {
+    --orange: #f9690e;
+    --black: #202020;
+    --white: #fff;
+    --border: 0.2rem solid #f9690e;
+    --box-shadow: 0.5rem 1rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../static/images/Ocean.jpg") no-repeat center/cover;
+    font-family: 'Nunito', sans-serif; /* Updated font family */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--white); /* Use color variable */
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(3rem, 5vw, 3.5rem); /* Adjust font size */
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#userInfo,
+#yourOrders {
+    flex: 2;
+    margin-right: 20px;
+    width: 100%;
+    background-color: transparent; /* Remove background color */
+    padding: 30px 40px; /* Adjust padding */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Use color variable */
+    border-radius: 10px; /* Apply border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Apply box shadow */
+}
+
+#orderList {
+    display: none;
+    margin-top: 10px;
+}
+
+p {
+    color: var(--white); /* Use color variable */
+    font-weight: bold;
+    font-size: clamp(1rem, 1vw + 0.8rem, 1.4rem);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--orange); /* Use color variable */
+    color: var(--white); /* Use color variable */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(1rem, 1vw, 1.4rem);
+    transition: transform 0.5s;
+    margin-bottom: 10px;
+    border-radius: 40px; /* Apply border radius */
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+.backButton {
+    margin: auto; /* Center horizontally */
+    margin-top: 20px; /* Add margin-top */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.centeredButton {
+    display: block;
+    margin: 5px auto;
+}
+
+.deleteAccountButton {
+    font-size: clamp(1rem, 1vw + 0.8rem, 1.4rem);
+    font-weight: bold;
+    background-color: #FF0000; /* Use color variable */
+    color: var(--white); /* Use color variable */
+    border: none;
+    margin-top: 10px;
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+    border-radius: 40px; /* Apply border radius */
+}
+
+.deleteAccountButton:hover {
+    background-color: #DC0000;
+}

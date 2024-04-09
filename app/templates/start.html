@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tour shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='start_style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- heaer section -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/start-account_page" id="accountButton">Account</a></li>
+            <li><a href="/" onclick="logout()" id="logoutButton">Sign out</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="home-content">
+            <h1>Planet of Journeys</h1>
+            <h3>Explore Beyond Boundaries</h3>
+        </div>
+    </div>
+</header>
+<!-- heaer section end -->
+
+<!-- tours section -->
+<section class="tours" id="tours">
+    <h2 class="heading"><span>Worldwide </span> Tours</h2>
+    <p>
+        Experience the world in all its beauty with our unique tours. From
+        thrilling adventures to luxurious getaways, we offer unforgettable
+        journeys to help you see, feel, and immerse yourself in the most
+        fascinating corners of our planet. Explore new horizons and enrich your
+        life with adventures that remain in your memory forever.
+    </p>
+    <div id="productsContainer" class="img-container">
+        <!-- Тут будуть відображені товари -->
+    </div>
+    <!--      <div class="img-container">-->
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/Japan.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/Japan_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/Norway.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/Norway_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/Brazilian.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/Brazilian_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/SharmElSheikh.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/Spain_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/France.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/France_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/Italy.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/Italy_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/Greece.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/Greece_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+
+    <!--        <div class="img-box">-->
+    <!--          <img src="images/Ireland.jpg" alt="" />-->
+    <!--          <button-->
+    <!--            class="buy-button"-->
+    <!--            onclick="window.location.href = 'pages/Ireland_info.html';"-->
+    <!--          >-->
+    <!--            Info-->
+    <!--          </button>-->
+    <!--        </div>-->
+    <!--      </div>-->
+</section>
+<!--tours section end -->
+
+<!-- services section -->
+<section class="services" id="services">
+    <h2 class="heading"><span>Our </span> Services</h2>
+
+    <div class="box-container">
+        <div class="box-item">
+            <div class="top">
+                <img src="/static/images/tours.png">
+                <h4>Tours</h4>
+            </div>
+            <div class="text">
+                <p>
+                    Discover the limitless possibilities of the world with our tour
+                    service! We are ready to provide you with the most exciting trips
+                    and unforgettable adventures, regardless of your destination or
+                    budget. Our experts know every corner of the planet and are ready
+                    to choose the perfect route for you.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-item">
+            <div class="top">
+                <img src="/static/images/transport.png">
+                <h4>Transfer</h4>
+            </div>
+            <div class="text">
+                <p>
+                    Ensure safe and comfortable movement with our transfer service!
+                    Our professional drivers will provide you with fast and reliable
+                    transportation from one point to another. Choose our transfer
+                    service and relax knowing that we take care of your
+                    transportation!
+                </p>
+            </div>
+        </div>
+
+        <div class="box-item">
+            <div class="top">
+                <img src="/static/images/earth.png">
+                <h4>Travel</h4>
+            </div>
+            <div class="text">
+                <p>
+                    Open the door to the world of adventure and discovery with our
+                    travel service! We offer you not only places to visit, but also
+                    unforgettable experiences that will stay with you forever. Our
+                    experts are ready to help you plan every detail of your trip -
+                    from choosing a destination to booking a hotel and organizing
+                    excursions.
+                </p>
+            </div>
+        </div>
+
+        <div class="box-item">
+            <div class="top">
+                <img src="/static/images/support.png">
+                <h4>Support</h4>
+            </div>
+            <div class="text">
+                <p>
+                    Our support service is your reliable partner in solving any
+                    questions and problems. Our experienced specialists are available
+                    to you around the clock, ready to provide quick and effective
+                    assistance.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- services section end -->
+
+<!-- footer section -->
+<section class="footer" id="footer">
+    <p>&copy; 2024 website. All rights reserved.</p>
+</section>
+<!-- footer section end -->
+<script src="{{ url_for('static', filename='start_script.js') }}"></script>
+</body>
+</html>
+
+
+
