@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Satisfy&display=swap");
+
+:root {
+    --orange: #f9690e;
+    --black: #202020;
+    --white: #fff;
+    --border: 0.2rem solid #f9690e;
+    --box-shadow: 0.5rem 1rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(first_part.jpg) no-repeat center/cover;
+}
+
+.container {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+    border-radius: 10px;
+    /*padding: 0 20px;*/
+    text-align: center;
+    padding: 30px;
+}
+
+.container h2 {
+    font-size: clamp(3rem, 5vw, 3.5rem);
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.container .register,
+.container .login {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    color: var(--white); /* Змінено на білий колір тексту */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: clamp(1rem, 1vw + 1rem, 1.4rem);
+    font-weight: 600;
+    margin: 10px 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Видалено підкреслення */
+}
+
+.container .register:hover,
+.container .login:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
