@@ -5,6 +5,7 @@ import App from './App';
 import Login from './Login';
 import Register from './Register';
 import Start from './StartPage';
+import ProductInfo from './ProductInfo'
 
 
 ReactDOM.render(
@@ -14,6 +15,7 @@ ReactDOM.render(
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/start" element={<Start />} />
+        <Route path="/tour_info" element={<ProductInfo />} />
     </Routes>
   </Router>,
   document.getElementById('root')

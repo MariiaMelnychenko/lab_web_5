@@ -1,3 +1,4 @@
+import './StartPage.css';
 document.addEventListener('DOMContentLoaded', () => {
     displayUserInfo();
     showOrders(); // Load and display orders when the page loads
@@ -144,5 +145,5 @@ function deleteOrder(orderId) {
 }
 
 function goBack() {
-    window.location.href = '/start-page';
+    window.location.href = 'http://127.0.0.1:3000/start';
 }

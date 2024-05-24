@@ -24,11 +24,11 @@ function Start() {
                     productElement.style.backgroundSize = '100% 100%';
                     productElement.style.backgroundPosition = 'center';
                     productElement.style.borderRadius = '15px';
-                    productElement.innerHTML = `<button class="buy-button" onclick="window.location.href = 'http://127.0.0.1:5000/tour_info?id=${product.product_id}';">Info</button><p class="tour_name">${product.name}</p>`;
+                    productElement.innerHTML = `<button class="buy-button" onclick="window.location.href = '/tour_info?id=${product.product_id}';">Info</button><p class="tour_name">${product.name}</p>`;
                     productsContainer.appendChild(productElement);
                 });
             } catch (error) {
-                console.error('Error fetching products:', error);
+                //console.error('Error fetching products:', error);
             }
         };
 
@@ -47,11 +47,11 @@ function Start() {
                         <li><a href="#home">Home</a></li>
                         <li><a href="#tours">Tours</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="http://127.0.0.1:5000/start-account_page" id="accountButton">Account</a></li>
-                        {/* <li><a href="/" onClick={() => logout()} id="logoutButton">Sign out</a></li> */}
+                        {/* <li><a href="http://127.0.0.1:5000/start-account_page" id="accountButton">Account</a></li> */}
+                        {/* <li><a href="/" id="LogOut">LogOut</a></li> */}
                     </ul>
                 </nav>
-                <div className="container">
+                <div className="containerstartpage">
                     <div className="home-content">
                         <h1>Planet of Journeys</h1>
                         <h3>Explore Beyond Boundaries</h3>
@@ -62,7 +62,7 @@ function Start() {
 
             {/* Tours section */}
             <section className="tours" id="tours">
-                <h2 className="heading"><span>Worldwide </span> Tours</h2>
+                <h2 className="heading">Worldwide Tours</h2>
                 <p>
                     Experience the world in all its beauty with our unique tours. From
                     thrilling adventures to luxurious getaways, we offer unforgettable
@@ -78,7 +78,7 @@ function Start() {
 
             {/* Services section */}
             <section className="services" id="services">
-                <h2 className="heading"><span>Our </span> Services</h2>
+                <h2 className="heading">Our Services</h2>
                 <div className="box-container">
                     <div className="box-item">
                         <div className="top">

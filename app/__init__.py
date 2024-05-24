@@ -4,14 +4,17 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
 from flask_login import login_required, current_user
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
 app.secret_key = 'your_secret_key'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@127.0.0.1:5436/new'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+
 
 
 login_manager = LoginManager(app)
@@ -37,22 +40,22 @@ admin.add_view(ModelView(Product, db.session, name='Products'))
 admin.add_view(ModelView(Order, db.session, name='Orders'))
 
 
-@app.route('/')
-def home():
-    return render_template("home.html")
+# @app.route('/')
+# def home():
+#     return render_template("home.html")
+#
+# @app.route('/login')
+# def login():
+#     return render_template("login.html")
 
-@app.route('/login')
-def login():
-    return render_template("login.html")
+# @app.route('/register')
+# def register():
+#     return render_template("register.html")
 
-@app.route('/register')
-def register():
-    return render_template("register.html")
-
-@app.route('/start-page')
-@login_required
-def start():
-    return render_template('start.html')
+# @app.route('/start-page')
+# @login_required
+# def start():
+#     return render_template('start.html')
 
 @app.route('/start-account_page')
 @login_required

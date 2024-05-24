@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 productInfoContainer.innerHTML = `
           <div class="product-info">
-            <a href="/start-page#tours" class="back-button">Home</a>
+            <a href="http://localhost:3000/start" class="back-button">Home</a>
             <div class="product-text">
               <h1>${data.name}</h1>
               <h2>${full_name}</h2>

@@ -23,7 +23,10 @@ def get_user_information():
             'username': current_user.username,
             'email': current_user.email,
             #'password': current_user.password
+
         }
+        print(user_info)
+
         return jsonify(user_info), 200
     else:
         return jsonify({'error': 'User not authenticated'}), 401

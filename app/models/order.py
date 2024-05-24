@@ -6,7 +6,7 @@ from app.models.models import Product, Order
 order_blueprint = Blueprint('order_blueprint', __name__)
 
 @order_blueprint.route('/place_order', methods=['POST'])
-@login_required
+#@login_required
 def place_order():
     # Отримайте дані замовлення, включаючи product_id та кількість units
     data = request.get_json()

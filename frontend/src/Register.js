@@ -38,7 +38,7 @@ function Register() {
     };
 
     return (
-        <div className="wrapper">
+        <div className="wrapper ">
             <form id="registerForm" onSubmit={handleSubmit}>
                 <h1>Registration</h1>
                 <div className="input-box">
