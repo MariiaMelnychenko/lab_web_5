@@ -44,11 +44,11 @@ function Start() {
             <header>
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#home">App</a></li>
                         <li><a href="#tours">Tours</a></li>
                         <li><a href="#services">Services</a></li>
-                        {/* <li><a href="http://127.0.0.1:5000/start-account_page" id="accountButton">Account</a></li> */}
-                        {/* <li><a href="/" id="LogOut">LogOut</a></li> */}
+                        <li><a href="http://127.0.0.1:5000/start-account_page" id="accountButton">Account</a></li>
+                        <li><a href="/" id="LogOut">LogOut</a></li>
                     </ul>
                 </nav>
                 <div className="containerstartpage">

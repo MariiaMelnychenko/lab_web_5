@@ -40,22 +40,22 @@ admin.add_view(ModelView(Product, db.session, name='Products'))
 admin.add_view(ModelView(Order, db.session, name='Orders'))
 
 
-# @app.route('/')
-# def home():
-#     return render_template("home.html")
-#
-# @app.route('/login')
-# def login():
-#     return render_template("login.html")
+@app.route('/')
+def home():
+    return render_template("home.html")
 
-# @app.route('/register')
-# def register():
-#     return render_template("register.html")
+@app.route('/login')
+def login():
+    return render_template("login.html")
 
-# @app.route('/start-page')
-# @login_required
-# def start():
-#     return render_template('start.html')
+@app.route('/register')
+def register():
+    return render_template("register.html")
+
+@app.route('/start-page')
+@login_required
+def start():
+    return render_template('start.html')
 
 @app.route('/start-account_page')
 @login_required

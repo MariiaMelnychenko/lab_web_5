@@ -45,7 +45,7 @@ def get_orders():
         for order in user_orders:
             prod_name = Product.query.get(order.product_id).product_name
             orders_data.append({'order_id': order.order_id, 'name': prod_name, 'status': order.status})
-
+        print(orders_data)
         return jsonify({'orders': orders_data}), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
